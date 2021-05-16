@@ -49,6 +49,10 @@ export default {
     padding: 0 16px;
     border-radius: 4px;
     min-height: 40px;
+    font-weight: 600;
+    color: #050f19;
+    font-size: 14px;
+    line-height: 24px;
 
     &_default {
         border: 1px solid #ECEFF1;
@@ -61,13 +65,6 @@ export default {
 
     &__icon {
         margin-right: 10px;
-    }
-
-    &__text {
-        color: #050f19;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 24px;
     }
 }
 </style>

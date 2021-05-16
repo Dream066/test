@@ -2,8 +2,8 @@
     <div ref="container" class="menu-top-dropdown">
         <button type="button" class="menu-top-dropdown__control" @click="toggle">
             Другие сервисы
+            <img src="../assets/select.svg" alt="/" class="menu-top-dropdown__icon">
         </button>
-        <img src="../assets/select.svg" alt="/" class="menu-top-dropdown__icon">
         <ul v-if="isOpened" class="menu-top-dropdown__body">
             <li v-for="item in items" :key="item.id" class="menu-top-dropdown__item">
                 <a :href="item.href" class="menu-top-dropdown__link">
@@ -67,11 +67,12 @@ export default {
 
     &__control {
         cursor: pointer;
-        margin-right: 6px;
         font-size: 12px;
         line-height: 20px;
         color: #708598;
         background-color: transparent;
+        display: flex;
+        align-items: center;
     }
 
     &__body {
@@ -96,6 +97,10 @@ export default {
         color: inherit;
         text-align: right;
         line-height: 1.2;
+    }
+
+    &__icon {
+        margin-left: 7px;
     }
 }
 </style>
